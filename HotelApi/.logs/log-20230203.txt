@@ -1,0 +1,4 @@
+2023-02-03 21:15:34.573 +04:00 [WRN] Failed to determine the https port for redirect.
+2023-02-03 21:16:45.107 +04:00 [WRN] Failed to determine the https port for redirect.
+2023-02-03 21:27:23.538 +04:00 [WRN] Failed to determine the https port for redirect.
+2023-02-03 21:27:54.302 +04:00 [WRN] Failed to determine the https port for redirect.
