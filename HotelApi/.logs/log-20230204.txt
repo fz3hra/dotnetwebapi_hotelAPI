@@ -1,0 +1,24 @@
+2023-02-04 00:24:52.690 +04:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'CountryId', N'Name', N'Rating') AND [object_id] = OBJECT_ID(N'[hotels]'))
+    SET IDENTITY_INSERT [hotels] ON;
+INSERT INTO [hotels] ([Id], [Address], [CountryId], [Name], [Rating])
+VALUES (2, N'Geroge Town', 3, N'Comfort Suites', 4.2999999999999998E0),
+(1, N'Negril', 1, N'Sandals Resort and Spa', 4.5E0);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'CountryId', N'Name', N'Rating') AND [object_id] = OBJECT_ID(N'[hotels]'))
+    SET IDENTITY_INSERT [hotels] OFF;
+2023-02-04 00:25:15.152 +04:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'CountryId', N'Name', N'Rating') AND [object_id] = OBJECT_ID(N'[hotels]'))
+    SET IDENTITY_INSERT [hotels] ON;
+INSERT INTO [hotels] ([Id], [Address], [CountryId], [Name], [Rating])
+VALUES (2, N'Geroge Town', 3, N'Comfort Suites', 4.2999999999999998E0),
+(1, N'Negril', 1, N'Sandals Resort and Spa', 4.5E0);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'CountryId', N'Name', N'Rating') AND [object_id] = OBJECT_ID(N'[hotels]'))
+    SET IDENTITY_INSERT [hotels] OFF;
+2023-02-04 00:26:04.630 +04:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'CountryId', N'Name', N'Rating') AND [object_id] = OBJECT_ID(N'[hotels]'))
+    SET IDENTITY_INSERT [hotels] ON;
+INSERT INTO [hotels] ([Id], [Address], [CountryId], [Name], [Rating])
+VALUES (2, N'Geroge Town', 3, N'Comfort Suites', 4.2999999999999998E0),
+(1, N'Negril', 1, N'Sandals Resort and Spa', 4.5E0);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'CountryId', N'Name', N'Rating') AND [object_id] = OBJECT_ID(N'[hotels]'))
+    SET IDENTITY_INSERT [hotels] OFF;
