@@ -22,3 +22,6 @@ VALUES (2, N'Geroge Town', 3, N'Comfort Suites', 4.2999999999999998E0),
 (1, N'Negril', 1, N'Sandals Resort and Spa', 4.5E0);
 IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'CountryId', N'Name', N'Rating') AND [object_id] = OBJECT_ID(N'[hotels]'))
     SET IDENTITY_INSERT [hotels] OFF;
+2023-02-04 23:20:33.477 +04:00 [INF] HTTP GET /api/Countries responded 200 in 933.3310 ms
+2023-02-04 23:25:00.310 +04:00 [INF] HTTP POST /api/Countries responded 400 in 154.6971 ms
+2023-02-04 23:25:12.787 +04:00 [INF] HTTP POST /api/Countries responded 201 in 634.0897 ms

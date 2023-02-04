@@ -1,4 +1,25 @@
 ﻿<Properties StartupConfiguration="{CFF30F27-8D32-4587-8817-7927C9D098B8}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotelApi/Program.cs">
+    <Files>
+      <File FileName="HotelApi/Program.cs" Line="3" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HotelApi" expanded="True">
+            <Node name="HotelApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HotelApi FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.HotelApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
