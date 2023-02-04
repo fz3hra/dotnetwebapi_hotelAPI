@@ -1,0 +1,4 @@
+2023-02-05 00:08:11.638 +04:00 [INF] HTTP GET /api/Countries responded 200 in 742.2008 ms
+2023-02-05 00:08:43.059 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 295.0499 ms
+2023-02-05 00:24:31.883 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 759.6811 ms
+2023-02-05 00:24:38.402 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 61.4133 ms

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HotelApi.ModelDtos.countryDtos
 {
-    public class CreateCountryDto : BaseCountryDto
+    public abstract class BaseCountryDto
     {
+        [Required]
+        public string Name { get; set; }
+        public string ShortName { get; set; }
     }
 }
