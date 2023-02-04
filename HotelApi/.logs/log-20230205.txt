@@ -2,3 +2,55 @@
 2023-02-05 00:08:43.059 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 295.0499 ms
 2023-02-05 00:24:31.883 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 759.6811 ms
 2023-02-05 00:24:38.402 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 61.4133 ms
+2023-02-05 01:44:14.968 +04:00 [ERR] HTTP GET /api/Countries responded 500 in 196.0541 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelApi.Controllers.CountriesController.Getcountries() in /Users/fz3hra/Desktop/code/HotelApi/HotelApi/Controllers/CountriesController.cs:line 33
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-02-05 01:44:15.000 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelApi.Controllers.CountriesController.Getcountries() in /Users/fz3hra/Desktop/code/HotelApi/HotelApi/Controllers/CountriesController.cs:line 33
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-05 01:49:28.721 +04:00 [INF] HTTP GET /api/Countries responded 200 in 736.1076 ms
+2023-02-05 01:51:20.630 +04:00 [INF] HTTP GET /api/Countries responded 200 in 677.6522 ms
+2023-02-05 01:51:31.282 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 238.3860 ms
+2023-02-05 01:51:32.764 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 38.1244 ms
+2023-02-05 01:59:46.251 +04:00 [INF] HTTP POST /api/Countries responded 201 in 795.4954 ms
+2023-02-05 02:00:04.300 +04:00 [INF] HTTP GET /api/Countries/4 responded 200 in 203.4192 ms
+2023-02-05 02:00:23.663 +04:00 [INF] HTTP PUT /api/Countries/4 responded 204 in 383.4666 ms
+2023-02-05 02:00:31.381 +04:00 [INF] HTTP GET /api/Countries/4 responded 200 in 101.0569 ms
+2023-02-05 02:00:44.689 +04:00 [INF] HTTP DELETE /api/Countries/4 responded 204 in 186.9694 ms
+2023-02-05 02:00:50.173 +04:00 [INF] HTTP GET /api/Countries/4 responded 404 in 46.4348 ms
+2023-02-05 02:10:50.295 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 867.1032 ms
+2023-02-05 02:11:06.839 +04:00 [INF] HTTP PUT /api/Countries/1 responded 204 in 155.8881 ms
+2023-02-05 02:11:14.585 +04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 133.6608 ms
+2023-02-05 02:11:29.025 +04:00 [INF] HTTP GET /api/Countries responded 200 in 65.0483 ms
