@@ -314,3 +314,8 @@
 /Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/AutoMapper.dll
 /Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll

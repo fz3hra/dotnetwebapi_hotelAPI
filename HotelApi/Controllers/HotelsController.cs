@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelApi.Data;
 using HotelApi.Contracts;
+using AutoMapper;
+using HotelApi.ModelDtos.hotelDtos;
 
 namespace HotelApi.Controllers
 {
@@ -15,27 +17,30 @@ namespace HotelApi.Controllers
     public class HotelsController : ControllerBase
     {
         private readonly IHotelsRepository _iHotelsRepository;
+        private readonly IMapper _mapper;
 
-        public HotelsController(IHotelsRepository iHotelsRepository)
+        public HotelsController(IHotelsRepository iHotelsRepository, IMapper mapper)
         {
             this._iHotelsRepository = iHotelsRepository;
+            this._mapper = mapper;
         }
 
         // GET: api/Hotels
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Hotel>>> Gethotels()
+        public async Task<ActionResult<IEnumerable<HotelDto>>> Gethotels()
         {
+            var hotels = await _iHotelsRepository.GetAllAsync();
             if (_iHotelsRepository == null)
             {
                 return NotFound();
             }
             // return await _context.hotels.ToListAsync();
-            return await _iHotelsRepository.GetAllAsync();
+            return _mapper.Map<List<HotelDto>>(hotels);
         }
 
         // GET: api/Hotels/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Hotel>> GetHotel(int id)
+        public async Task<ActionResult<HotelDto>> GetHotel(int id)
         {
             if (_iHotelsRepository == null)
             {
@@ -49,20 +54,27 @@ namespace HotelApi.Controllers
                 return NotFound();
             }
 
-            return hotel;
+            return Ok(_mapper.Map<HotelDto>(hotel));
         }
 
         // PUT: api/Hotels/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutHotel(int id, Hotel hotel)
+        public async Task<IActionResult> PutHotel(int id, HotelDto hotelDto)
         {
-            if (id != hotel.Id)
+            if (id != hotelDto.Id)
             {
                 return BadRequest();
             }
 
             // _context.Entry(hotel).State = EntityState.Modified;
+            var hotel = await _iHotelsRepository.GetAsync(id);
+            if (hotel == null)
+            {
+                return NotFound();
+            }
+
+            _mapper.Map(hotelDto, hotel);
 
             try
             {
@@ -87,8 +99,9 @@ namespace HotelApi.Controllers
         // POST: api/Hotels
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Hotel>> PostHotel(Hotel hotel)
+        public async Task<ActionResult<Hotel>> PostHotel(CreateHotelDto createHotelDto)
         {
+            var hotel = _mapper.Map<Hotel>(createHotelDto);
             if (_iHotelsRepository == null)
             {
                 return Problem("Entity set 'HotelDbContext.hotels'  is null.");
