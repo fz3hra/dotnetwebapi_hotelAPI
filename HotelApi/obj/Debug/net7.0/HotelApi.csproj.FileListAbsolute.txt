@@ -319,3 +319,4 @@
 /Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
 /Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/fz3hra/Desktop/code/HotelApi/HotelApi/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

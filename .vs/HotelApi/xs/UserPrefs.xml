@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{CFF30F27-8D32-4587-8817-7927C9D098B8}|https">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="HotelApi/Controllers/CountriesController.cs">
     <Files>
-      <File FileName="HotelApi/Program.cs" Line="6" Column="1" />
-      <File FileName="HotelApi/Controllers/CountriesController.cs" Line="7" Column="37" />
+      <File FileName="HotelApi/Program.cs" />
+      <File FileName="HotelApi/Controllers/CountriesController.cs" Line="2" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,9 +19,8 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.HotelApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HotelApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
