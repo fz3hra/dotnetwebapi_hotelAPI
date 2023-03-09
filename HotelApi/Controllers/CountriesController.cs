@@ -9,6 +9,7 @@ using HotelApi.Data;
 using HotelApi.ModelDtos.countryDtos;
 using AutoMapper;
 using HotelApi.Contracts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HotelApi.Controllers
 {
@@ -66,6 +67,7 @@ namespace HotelApi.Controllers
         // PUT: api/Countries/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutCountry(int id, UpdateCountryDto updateCountryDto)
         {
             if (id != updateCountryDto.Id)
@@ -101,6 +103,7 @@ namespace HotelApi.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountryDto)
         {
             // var country = new Country
@@ -124,6 +127,7 @@ namespace HotelApi.Controllers
 
         // DELETE: api/Countries/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteCountry(int id)
         {
             if (_countriesRepository == null)

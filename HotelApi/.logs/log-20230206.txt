@@ -54,3 +54,13 @@ System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[
 2023-02-06 13:26:00.378 +04:00 [INF] HTTP PUT /api/Hotels/1 responded 400 in 47.7697 ms
 2023-02-06 13:27:23.429 +04:00 [INF] HTTP PUT /api/Hotels/1 responded 204 in 126.9497 ms
 2023-02-06 13:27:32.288 +04:00 [INF] HTTP GET /api/Hotels/1 responded 200 in 14.2423 ms
+2023-02-06 15:11:08.140 +04:00 [INF] HTTP POST /api/Account/register responded 400 in 146.1539 ms
+2023-02-06 15:11:11.082 +04:00 [INF] HTTP POST /api/Account/register responded 400 in 12.6423 ms
+2023-02-06 15:11:18.536 +04:00 [INF] HTTP POST /api/Account/register responded 200 in 1108.5897 ms
+2023-02-06 15:30:50.898 +04:00 [INF] HTTP POST /api/Account/login responded 401 in 936.1677 ms
+2023-02-06 15:31:02.206 +04:00 [INF] HTTP POST /api/Account/login responded 401 in 154.2516 ms
+2023-02-06 15:31:15.726 +04:00 [INF] HTTP POST /api/Account/login responded 401 in 103.6515 ms
+2023-02-06 15:32:03.378 +04:00 [INF] HTTP POST /api/Account/register responded 200 in 445.4432 ms
+2023-02-06 15:32:23.738 +04:00 [INF] HTTP POST /api/Account/login responded 401 in 94.4139 ms
+2023-02-06 15:32:39.108 +04:00 [INF] HTTP POST /api/Account/login responded 401 in 107.3123 ms
+2023-02-06 15:35:01.986 +04:00 [INF] HTTP POST /api/Account/login responded 200 in 842.1214 ms

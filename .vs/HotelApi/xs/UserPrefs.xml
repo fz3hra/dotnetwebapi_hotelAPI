@@ -1,26 +1,25 @@
 ﻿<Properties StartupConfiguration="{CFF30F27-8D32-4587-8817-7927C9D098B8}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotelApi/Controllers/CountriesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotelApi/Contracts/IAuthManager.cs">
     <Files>
-      <File FileName="HotelApi/Program.cs" />
+      <File FileName="HotelApi/Program.cs" Line="88" Column="1" />
       <File FileName="HotelApi/Controllers/CountriesController.cs" Line="2" Column="1" />
+      <File FileName="HotelApi/ModelDtos/userDtos/AuthResponseDto.cs" Line="6" Column="41" />
+      <File FileName="HotelApi/Contracts/IAuthManager.cs" Line="15" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HotelApi" expanded="True">
-            <Node name="HotelApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="ModelDtos" expanded="True" />
-            </Node>
+            <Node name="HotelApi" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.HotelApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
